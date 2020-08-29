@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+
+<h1>Compose</h1>
+
+<form class="" action="/compose" method="post">
+
+
+  <div class="form-group">
+
+    <label>Title</label>
+    <input type="text" class="form-control" name="postTitle" autocomplete="off">
+
+    <label>Post</label>
+    <textarea class="form-control"  name="postBody" rows="6"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Publish</button>
+
+</form>
+
+
+{% endblock %}

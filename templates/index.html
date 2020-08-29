@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+{% for i in range(length) %}
+   <h1> {{ current_user_posts[i]['title'] }} </h1>
+   <p> {{ current_user_posts[i]['post'] | truncate(200)}}  <a href="/posts/{{i}}">Read More</a></p>
+
+
+{% endfor %}
+   <h2> {{ current_posts }} </h2>
+{% endblock %}
